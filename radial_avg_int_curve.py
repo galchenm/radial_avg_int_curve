@@ -14,11 +14,11 @@ def get_dataset_keys(f):
 
 input_path = sys.argv[1] #'/asap3/petra3/gpfs/p11/2021/data/11010507/raw/20210916_6946/'
 hdf5path = sys.argv[2] #'entry/data/data'
-energy = sys.argv[3] #12 keV
-clen = sys.argv[4] #199.6 mm
-pixel_size = sys.argv[5] #0.15 mm --> for binned data (binning 2x2) in Eiger case pixel size equals to 150 micron
-orgx = sys.argv[6] #1065 - this value you can get from the geometry file
-orgy = sys.argv[7] #1092 - this value you can get from the geometry file
+energy = float(sys.argv[3]) #12 keV
+clen = float(sys.argv[4]) #199.6 mm
+pixel_size = float(sys.argv[5]) #0.15 mm --> for binned data (binning 2x2) in Eiger case pixel size equals to 150 micron
+orgx = float(sys.argv[6]) #1065 - this value you can get from the geometry file
+orgy = float(sys.argv[7]) #1092 - this value you can get from the geometry file
 extension = sys.argv[8] #'h5'
 
 center = (orgx, orgy)
